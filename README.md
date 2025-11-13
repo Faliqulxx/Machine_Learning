@@ -185,7 +185,3 @@ Dengan demikian, pendekatan **Deep Learning berbasis Word2Vec dan FastText** men
 - Libraries: `scikit-learn`, `gensim`, `transformers`, `Sastrawi`, `pandas`, `numpy`, `matplotlib`  
 - Model Pra-latih: **FastText (Bahasa Indonesia)**, **Word2Vec**, **IndoBERT**, **XLM-RoBERTa**
 
----
-
-## 📦 Struktur Proyek
-
