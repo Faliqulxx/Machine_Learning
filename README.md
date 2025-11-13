@@ -1,9 +1,9 @@
 # 📰 Klasifikasi Polaritas Berita Ekonomi Indonesia Terkait Kebijakan Pemerintah pada Detik
 
 **Penulis:**  
-Faliqul Ishbah (202210370311148)
-Tiko Dava (202210370311149)
-Ganesha Mahardika Prasetya (202210370311156)
+- Faliqul Ishbah (202210370311148)
+- Tiko Dava (202210370311149)
+- Ganesha Mahardika Prasetya (202210370311156)
 
 **Jurusan Informatika, Fakultas Teknik, Universitas Muhammadiyah Malang**  
 Jl. Raya Tlogomas, Tegalgondo, Kec. Lowokwaru, Malang, Jawa Timur, Indonesia, 65144  
