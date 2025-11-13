@@ -5,7 +5,7 @@
 - Tiko Dava (202210370311149)
 - Ganesha Mahardika Prasetya (202210370311156)
 
-**Jurusan Informatika, Fakultas Teknik, Universitas Muhammadiyah Malang**  
+**Informatika, Fakultas Teknik, Universitas Muhammadiyah Malang**  
 Jl. Raya Tlogomas, Tegalgondo, Kec. Lowokwaru, Malang, Jawa Timur, Indonesia, 65144  
 
 ---
