@@ -1,4 +1,4 @@
-📰 Klasifikasi Polaritas Berita Ekonomi Indonesia Terkait Kebijakan Pemerintah pada Detik
+# Klasifikasi Polaritas Berita Ekonomi Indonesia Terkait Kebijakan Pemerintah pada Detik
 
 Oleh:
 Faliqul Ishbah, Ganesha Mahardika Prasetya, Tiko Dava
