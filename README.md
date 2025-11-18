@@ -18,7 +18,7 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 ├── Dataset/
 │   ├── raw/                         # Data hasil scraping dari Detik
 │   ├── berita_detik_news_label.csv/ # Data setelah di label    
-|   ├── berita_detik_news_label.csv/ # Data setelah preprocessing
+|   ├── berita_detik_news_processed.csv/ # Data setelah preprocessing
 ├── models/
 │   ├── classical/         # Model TF-IDF & BoW
 │   ├── deep_learning/     # Word2Vec & FastText
