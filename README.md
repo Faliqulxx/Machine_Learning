@@ -70,14 +70,12 @@ notebooks/scraping.ipynb
 
 ### 2. Preprocessing Data
 ```bash
-python preprocess.ipynb
+notebooks/preprocessing.ipynb
 ```
 
 ### 3. Training Model
-
-#### a. Metode Klasik (TF-IDF / BoW)
 ```bash
-python train.ipynb
+notebooks/training.ipynb
 
 ```
 
