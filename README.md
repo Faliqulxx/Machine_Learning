@@ -27,9 +27,6 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 │   ├── scraping.ipynb
 │   ├── preprocessing.ipynb
 │   ├── training.ipynb
-├── utils/
-│   ├── preprocessing.py
-│   ├── train_utils.py
 ├── requirements.txt
 └── README.md
 ```
