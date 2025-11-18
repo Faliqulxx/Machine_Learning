@@ -19,11 +19,11 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 │   ├── raw/                         # Data hasil scraping dari Detik
 │   ├── berita_detik_news_label.csv/ # Data setelah di label    
 |   ├── berita_detik_news_processed.csv/ # Data setelah preprocessing
-├── models/
+├── Models/
 │   ├── classical/         # Model TF-IDF & BoW
 │   ├── deep_learning/     # Word2Vec & FastText
 │   ├── transformer/       # IndoBERT & XLM-R
-├── notebooks/
+├── Notebooks/
 │   ├── scraping.ipynb
 │   ├── preprocessing.ipynb
 │   ├── training.ipynb
