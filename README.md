@@ -16,9 +16,9 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 ```
 .
 ├── Dataset/
-│   ├── raw/                         # Data hasil scraping dari Detik
-│   ├── berita_detik_news_label.csv/ # Data setelah di label    
-|   ├── berita_detik_news_processed.csv/ # Data setelah preprocessing
+│   ├── raw.csv                         # Data hasil scraping dari Detik
+│   ├── berita_detik_news_label.csv     # Data setelah di label    
+|   ├── berita_detik_news_processed.csv # Data setelah preprocessing
 ├── Models/
 │   ├── classical/         # Model TF-IDF & BoW
 │   ├── deep_learning/     # Word2Vec & FastText
@@ -65,36 +65,21 @@ pip install -r requirements.txt
 
 ### 1. Menjalankan Web Scraper
 ```bash
-python scraping.py
-```
-Atau via Notebook:
-```
 notebooks/scraping.ipynb
 ```
 
 ### 2. Preprocessing Data
 ```bash
-python preprocess.py
+python preprocess.ipynb
 ```
 
 ### 3. Training Model
 
 #### a. Metode Klasik (TF-IDF / BoW)
 ```bash
-python train_classical.py
-```
+python train.ipynb
 
-#### b. Deep Learning (Word2Vec / FastText)
-```bash
-python train_embeddings.py
 ```
-
-#### c. Transfer Learning (IndoBERT / XLM-RoBERTa)
-```bash
-python train_transformer.py
-```
-
----
 
 ## 📊 Ringkasan Hasil
 
