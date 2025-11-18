@@ -1,20 +1,27 @@
-Klasifikasi Polaritas Berita Ekonomi Indonesia (Detik.com)
-----------------------------------------------------------
+# 📰 Klasifikasi Polaritas Berita Ekonomi Indonesia (Detik.com)
 
-Proyek ini melakukan klasifikasi sentimen (Positif, Netral, Negatif) pada berita ekonomi Indonesia dari Detik.com. Pendekatan yang digunakan meliputi metode klasik (TF-IDF, BoW), deep learning (Word2Vec, FastText), dan transformer (IndoBERT, XLM-RoBERTa).
+Proyek ini melakukan analisis sentimen pada berita ekonomi Indonesia dari Detik.com dan mengklasifikasikan polaritas berita menjadi **Positif**, **Netral**, dan **Negatif**.  
+Pendekatan yang diuji meliputi:
 
-============================================================
-1. Struktur Folder
-============================================================
+- **Metode Klasik:** Bag-of-Words, TF-IDF  
+- **Deep Learning Embeddings:** Word2Vec, FastText  
+- **Transfer Learning:** IndoBERT, XLM-RoBERTa  
 
+Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan representasi teks dan algoritma klasifikasi.
+
+---
+
+## 📁 Struktur Folder
+
+```
 .
 ├── data/
-│   ├── raw/              # Data hasil scraping
-│   ├── processed/        # Data setelah preprocessing
+│   ├── raw/               # Data hasil scraping dari Detik
+│   ├── processed/         # Data setelah preprocessing
 ├── models/
-│   ├── classical/
-│   ├── deep_learning/
-│   ├── transformer/
+│   ├── classical/         # Model TF-IDF & BoW
+│   ├── deep_learning/     # Word2Vec & FastText
+│   ├── transformer/       # IndoBERT & XLM-R
 ├── notebooks/
 │   ├── scraping.ipynb
 │   ├── preprocessing.ipynb
@@ -23,81 +30,118 @@ Proyek ini melakukan klasifikasi sentimen (Positif, Netral, Negatif) pada berita
 │   ├── preprocessing.py
 │   ├── train_utils.py
 ├── requirements.txt
-└── README.txt
+└── README.md
+```
 
+---
 
-============================================================
-2. Instalasi
-============================================================
+## ⚙️ Instalasi
 
-1. Clone repository:
-   git clone https://github.com/username/nama-repo.git
-   cd nama-repo
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/username/nama-repo.git
+cd nama-repo
+```
 
-2. (Opsional) Buat virtual environment:
-   python -m venv env
-   source env/bin/activate        # Linux/Mac
-   env\Scripts\activate           # Windows
+### 2️⃣ Buat Virtual Environment (Opsional)
+Linux/Mac:
+```bash
+python -m venv env
+source env/bin/activate
+```
 
-3. Install dependencies:
-   pip install -r requirements.txt
+Windows:
+```bash
+python -m venv env
+env\Scripts\activate
+```
 
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-============================================================
-3. Cara Menjalankan
-============================================================
+---
 
-1. Menjalankan Web Scraper:
-   python scraping.py
-   atau buka notebook:
-   notebooks/scraping.ipynb
+## ▶️ Cara Menjalankan
 
-2. Preprocessing Data:
-   python preprocess.py
+### 1. Menjalankan Web Scraper
+```bash
+python scraping.py
+```
+Atau via Notebook:
+```
+notebooks/scraping.ipynb
+```
 
-3. Training Model:
-   a. Metode Klasik (TF-IDF / BoW)
-      python train_classical.py
+### 2. Preprocessing Data
+```bash
+python preprocess.py
+```
 
-   b. Deep Learning (Word2Vec / FastText)
-      python train_embeddings.py
+### 3. Training Model
 
-   c. Transfer Learning (IndoBERT / XLM-RoBERTa)
-      python train_transformer.py
+#### a. Metode Klasik (TF-IDF / BoW)
+```bash
+python train_classical.py
+```
 
+#### b. Deep Learning (Word2Vec / FastText)
+```bash
+python train_embeddings.py
+```
 
-============================================================
-4. Hasil Ringkas
-============================================================
+#### c. Transfer Learning (IndoBERT / XLM-RoBERTa)
+```bash
+python train_transformer.py
+```
 
-Pendekatan - Model - Akurasi Tertinggi
---------------------------------------
-Klasik: TF-IDF + Naive Bayes .......... 75.35%
-Deep Learning: Word2Vec + SVM ......... 75.55%
-Transformer: Embedding + Random Forest  71.75%
+---
 
-Deep Learning (Word2Vec / FastText) memberikan performa paling stabil.
+## 📊 Ringkasan Hasil
 
+| Pendekatan         | Model                  | Akurasi |
+|-------------------|------------------------|---------|
+| **Klasik**         | TF-IDF + Naive Bayes   | **75.35%** |
+| **Deep Learning**  | Word2Vec + SVM         | **75.55%** |
+| **Transformer**    | Embedding + Random Forest | **71.75%** |
 
-============================================================
-5. Teknologi
-============================================================
+💡 **Word2Vec dan FastText memberikan hasil paling stabil**  
+💡 TF-IDF + Naive Bayes menjadi baseline terbaik di pendekatan klasik  
 
-- Python 3.x
-- scikit-learn
-- gensim
-- transformers
-- Sastrawi
-- FastText
-- Word2Vec
-- IndoBERT
-- XLM-RoBERTa
+---
 
+## 🧠 Insight Penelitian
 
-============================================================
-6. Contributor
-============================================================
+- Metode klasik (TF-IDF) memberikan baseline kuat, namun kurang menangkap konteks.  
+- Word2Vec & FastText menangani semantik lebih baik sehingga performanya stabil.  
+- Embedding IndoBERT & XLM-R belum optimal saat diklasifikasi dengan model klasik—perlu fine-tuning full model agar lebih maksimal.
 
-- Faliqul Ishbah
-- Tiko Dava
-- Ganesha Mahardika Prasetya
+---
+
+## 🛠 Teknologi yang Digunakan
+
+- Python 3.x  
+- scikit-learn  
+- gensim  
+- transformers (HuggingFace)  
+- Sastrawi  
+- FastText  
+- Word2Vec  
+- IndoBERT, XLM-RoBERTa  
+
+---
+
+## 👨‍💻 Contributor
+
+- **Faliqul Ishbah**  
+- **Tiko Dava**  
+- **Ganesha Mahardika Prasetya**
+
+---
+
+## 📜 Lisensi
+
+Proyek ini dibuat untuk tujuan akademik & penelitian.  
+Silakan gunakan, modifikasi, dan kembangkan sesuai kebutuhan.
+
