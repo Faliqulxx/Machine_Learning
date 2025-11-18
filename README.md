@@ -40,7 +40,7 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/username/nama-repo.git
+git clone https://github.com/Faliqulxx/Machine_Learning
 cd nama-repo
 ```
 
