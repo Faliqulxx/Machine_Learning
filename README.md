@@ -84,8 +84,8 @@ notebooks/training.ipynb
 | Pendekatan         | Model                  | Akurasi |
 |-------------------|------------------------|---------|
 | **Klasik**         | TF-IDF + Naive Bayes   | **75.35%** |
-| **Deep Learning**  | Word2Vec + SVM         | **75.55%** |
-| **Transformer**    | Embedding + Random Forest | **71.75%** |
+| **Deep Learning**  | Word2Vec + LSTM        | **59,71%** |
+| **Transformer**    | indoBERT               | **52,89%** |
 
 💡 **Word2Vec dan FastText memberikan hasil paling stabil**  
 💡 TF-IDF + Naive Bayes menjadi baseline terbaik di pendekatan klasik  
