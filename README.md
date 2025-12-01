@@ -4,8 +4,8 @@ Proyek ini melakukan analisis sentimen pada berita ekonomi Indonesia dari Detik.
 Pendekatan yang diuji meliputi:
 
 - **Metode Klasik:** Bag-of-Words, TF-IDF  
-- **Deep Learning Embeddings:** Word2Vec, FastText  
-- **Transfer Learning:** IndoBERT, XLM-RoBERTa  
+- **Deep Learning Embeddings:** Gru, LSTM 
+- **Transfer Learning:** IndoBERT 
 
 Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan representasi teks dan algoritma klasifikasi.
 
@@ -19,10 +19,6 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 │   ├── raw.csv                         # Data hasil scraping dari Detik
 │   ├── berita_detik_news_label.csv     # Data setelah di label    
 |   ├── berita_detik_news_processed.csv # Data setelah preprocessing
-├── Models/
-│   ├── classical/         # Model TF-IDF & BoW
-│   ├── deep_learning/     # Word2Vec & FastText
-│   ├── transformer/       # IndoBERT & XLM-R
 ├── Notebooks/
 │   ├── scraping.ipynb
 │   ├── preprocessing.ipynb
@@ -78,20 +74,17 @@ notebooks/preprocessing.ipynb
 
 ### 3. Training Model
 ```bash
-notebooks/training.ipynb
+notebooks/trainer/...
 
 ```
 
 ## 📊 Ringkasan Hasil
 
-| Pendekatan         | Model                  | Akurasi |
-|-------------------|------------------------|---------|
-| **Klasik**         | TF-IDF + Naive Bayes   | **75.35%** |
-| **Deep Learning**  | Word2Vec + LSTM        | **59,71%** |
-| **Pretrained**    | indoBERT               | **52,89%** |
-
-💡 **Word2Vec dan FastText memberikan hasil paling stabil**  
-💡 TF-IDF + Naive Bayes menjadi baseline terbaik di pendekatan klasik  
+| Pendekatan               | Model                  | Akurasi    |
+|--------------------------|------------------------|------------|
+| **Klasik**               | TF-IDF + Naive Bayes   | **75.35%** |
+| **Deep Learning**        | Gru + LSTM             | **59,71%** |
+| **Transfer Learning**    | indoBERT               | **52,89%** |
 
 ---
 
@@ -123,9 +116,4 @@ notebooks/training.ipynb
 - **Ganesha Mahardika Prasetya**
 
 ---
-
-## 📜 Lisensi
-
-Proyek ini dibuat untuk tujuan akademik & penelitian.  
-Silakan gunakan, modifikasi, dan kembangkan sesuai kebutuhan.
 
