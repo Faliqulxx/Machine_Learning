@@ -26,7 +26,10 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 ├── Notebooks/
 │   ├── scraping.ipynb
 │   ├── preprocessing.ipynb
-│   ├── training.ipynb
+│   ├── trainer/
+|       ├── classical.ipynb
+|       ├── depp_learning.ipynb
+|       ├── transfer_learning.ipynb
 ├── requirements.txt
 └── README.md
 ```
@@ -70,14 +73,12 @@ notebooks/scraping.ipynb
 
 ### 2. Preprocessing Data
 ```bash
-python preprocess.ipynb
+notebooks/preprocessing.ipynb
 ```
 
 ### 3. Training Model
-
-#### a. Metode Klasik (TF-IDF / BoW)
 ```bash
-python train.ipynb
+notebooks/training.ipynb
 
 ```
 
@@ -86,8 +87,8 @@ python train.ipynb
 | Pendekatan         | Model                  | Akurasi |
 |-------------------|------------------------|---------|
 | **Klasik**         | TF-IDF + Naive Bayes   | **75.35%** |
-| **Deep Learning**  | Word2Vec + SVM         | **75.55%** |
-| **Transformer**    | Embedding + Random Forest | **71.75%** |
+| **Deep Learning**  | Word2Vec + LSTM        | **59,71%** |
+| **Pretrained**    | indoBERT               | **52,89%** |
 
 💡 **Word2Vec dan FastText memberikan hasil paling stabil**  
 💡 TF-IDF + Naive Bayes menjadi baseline terbaik di pendekatan klasik  
