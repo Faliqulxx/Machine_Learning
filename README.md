@@ -26,7 +26,10 @@ Tujuan penelitian adalah membandingkan performa model dari berbagai pendekatan r
 ├── Notebooks/
 │   ├── scraping.ipynb
 │   ├── preprocessing.ipynb
-│   ├── training.ipynb
+│   ├── trainer/
+|        ├── classical.ipynb
+|        ├── depp_learning.ipynb
+|        ├── transfer_learning.ipynb
 ├── requirements.txt
 └── README.md
 ```
