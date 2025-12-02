@@ -91,8 +91,8 @@ notebooks/trainer/...
 ## 🧠 Insight Penelitian
 
 - Metode klasik (TF-IDF) memberikan baseline kuat, namun kurang menangkap konteks.  
-- Word2Vec & FastText menangani semantik lebih baik sehingga performanya stabil.  
-- Embedding IndoBERT & XLM-R belum optimal saat diklasifikasi dengan model klasik—perlu fine-tuning full model agar lebih maksimal.
+- Gru & LSTM menangani semantik lebih baik sehingga performanya stabil.  
+- Embedding IndoBERT belum optimal saat diklasifikasi dengan model klasik—perlu fine-tuning full model agar lebih maksimal.
 
 ---
 
